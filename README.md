@@ -1,192 +1,52 @@
 # Visualizing Housing Market Trends: An Analysis of Sale Prices and Features using Tableau
 
-## Project Overview
+## Project Description
 
-This project focuses on analyzing housing market trends using Tableau. The objective is to explore housing data, validate its quality, clean the dataset, and prepare it for visualization and dashboard creation.
+This project was developed for ABC Company to address the challenges of understanding the factors that influence house prices and sales trends. By analyzing comprehensive housing data, including total sales by years since renovation, house age distribution by the number of bathrooms, bedrooms, and floors, and the impact of renovations on house age, the project aims to uncover key market insights. Tableau is used to visualize and interpret patterns in the housing market, informing strategic decisions, optimizing pricing strategies, and enhancing overall market competitiveness. Key stakeholders include real estate analysts, marketing teams, and company executives.
 
-The dataset contains information about house prices, bedrooms, bathrooms, floor counts, property area, and renovation details.
+## Scenarios
 
----
+### Scenario 1: Overall Data Overview
 
-# Step 1: Dataset Collection
+This visualization presents a summary of the dataset, showing the count of transformed housing data records, the average sales price, and the total basement area in square feet. It provides a quick snapshot of the dataset's scale and key metrics, giving stakeholders a foundational understanding of the data being analyzed.
 
-## Description
+### Scenario 2: Total Sales by Years Since Renovation
 
-The first step of the project involved collecting the housing dataset required for analysis. The dataset was obtained from Kaggle and downloaded in CSV format.
+This histogram illustrates the distribution of total sales based on the number of years since a house was renovated. The bars represent different sales price bins, highlighting how recently renovated houses correlate with varying price ranges. This scenario helps stakeholders understand the impact of renovations on house prices and identify trends in buyer preferences for renovated homes.
 
-## Actions Performed
+### Scenario 3: Distribution of House Age by Renovation Status
 
-* Downloaded the housing dataset from Kaggle.
-* Extracted the dataset files to the local project directory.
-* Organized the dataset inside a `dataset` folder for better project structure.
+This pie chart shows the distribution of houses based on their age and renovation status. Each segment represents a different age group, offering insight into how house age is spread across the dataset and the proportion of renovated versus non-renovated houses. This visualization assists in assessing the age characteristics of the housing inventory and the prevalence of renovations.
 
-## Dataset Information
+### Scenario 4: House Age Distribution by Number of Bathrooms, Bedrooms, and Floors
 
-| Attribute      | Value  |
-| -------------- | ------ |
-| File Format    | CSV    |
-| Total Records  | 21,609 |
-| Total Features | 31     |
+This grouped bar chart displays the distribution of house ages categorized by the number of bathrooms, bedrooms, and floors. It shows how houses of different ages are distributed according to these attributes, offering a detailed view of how house features vary with age. This scenario helps stakeholders identify patterns in housing characteristics and preferences related to house features over time.
 
-## Dataset File
+## Project Plan
 
-```
-dataset/Transformed_Housing_Data2.csv
-```
+The project follows a structured workflow to deliver actionable insights:
 
-## Proof
+- **Data Collection:** Collect the dataset and connect it with Tableau.
+- **Data Preparation:** Prepare and clean the data for visualization.
+- **Data Visualizations:** Build visualizations and design a responsive dashboard.
+- **Storyboard:** Create a storyboard to present the analysis flow.
+- **Performance Testing:** Validate the utilization of data filters, calculation fields, and the number of visualizations.
+- **Web Integration:** Publish the dashboard and embed the story in a UI built with Flask.
 
-Screenshot showing dataset collection step.
+## Project Modules
 
-![Dataset Collected](screenshots/dataset_collected.png)
-
----
-
-# Step 2: Loading the Dataset into Tableau
-
-## Description
-
-The downloaded dataset was imported into Tableau Public to enable data exploration and visualization.
-
-## Actions Performed
-
-1. Opened Tableau Public.
-2. Selected **Text File** as the data source.
-3. Navigated to the dataset location.
-4. Imported the CSV file into Tableau.
-5. Verified that the dataset loaded successfully.
-
-## Data Source Verification
-
-After importing the dataset, the following checks were performed:
-
-* Verified column headers
-* Confirmed the dataset structure
-* Ensured that all columns were correctly detected
-* Confirmed the dataset size
-
-| Property      | Value  |
-| ------------- | ------ |
-| Total Rows    | 21,609 |
-| Total Columns | 31     |
-
-## Proof
-
-Screenshot showing the dataset loaded into Tableau.
-
-![Dataset Loaded](screenshots/loaded_dataset.png)
-
----
-
-# Step 3: Data Cleaning and Preparation
-
-## Description
-
-Before creating visualizations, the dataset was reviewed and cleaned to ensure data quality and accuracy.
-
-## Data Review & Exploration
-
-The dataset was explored to understand:
-
-* Data types
-* Value ranges
-* Data distributions
-
-This helped identify potential outliers and ensured familiarity with the dataset structure.
-
----
-
-## Field Renaming and Formatting
-
-Some column names were simplified to improve readability.
-
-Example changes:
-
-| Original Field      | Updated Name |
-| ------------------- | ------------ |
-| No of Bedrooms      | Bedrooms     |
-| No of Bathrooms     | Bathrooms    |
-| Flat Area (in Sqft) | Living Area  |
-
-
-This improves clarity when building visualizations.
-
----
-
-## Data Type Validation
-
-Each column was verified to ensure correct data types:
-
-| Field        | Data Type |
-| ------------ | --------- |
-| Sale Price   | Numeric   |
-| Bedrooms     | Numeric   |
-| Bathrooms    | Numeric   |
-| Floors       | Numeric   |
-| Living Area  | Numeric   |
-| Age of House | Numeric   |
-
----
-
-## Duplicate and Missing Value Check
-
-The dataset was validated for inconsistencies.
-
-* No significant missing values were detected.
-* Only **11 duplicate rows** were identified, which is negligible relative to the dataset size.
-
----
-
-## Optional Calculated Fields
-
-A calculated field was created to enhance analysis.
-
-### Price per Sqft
-
-Formula:
-
-```
-[Sale Price] / [Flat Area (in Sqft)]
-```
-
-This metric helps analyze property value efficiency.
-
----
-
-## Data Validation
-
-To ensure accuracy:
-
-* Dataset structure was verified.
-* Column formats were confirmed.
-* Key numerical fields were validated.
-
-The dataset is now clean and ready for visualization.
-
-## Proof
-
-Screenshot showing dataset prepared in Tableau.
-
-![Data Cleaning](screenshots/data_cleaning.png)
-
----
-
-# Tools Used
-
-* Tableau Public
-* Kaggle Housing Dataset
-* GitHub for project documentation
-
----
-
-# Conclusion
-
-The dataset was successfully:
-
-* Collected
-* Imported into Tableau
-* Cleaned and validated
-
-The data is now structured and ready for the next stage of the project: **Data Visualization and Dashboard Development**.
-
-Future steps will include creating visualizations to analyze housing market trends and presenting insights through interactive dashboards.
+| Module | Epic | Estimated Time | Status | Assigned to |
+|---|---|---|---|---|
+| Collect the Dataset | Data Collection & Extraction from Database | 2h 30m | Review | Krrish Singhal |
+| Loading the Dataset | Data Collection & Extraction from Database | 2h 30m | Review | Krrish Singhal |
+| Data Cleaning | Data Preparation | 5h 0m | Review | Krrish Singhal |
+| No. of Unique Visualizations | Data Visualization | 5h 0m | Review | Mayank Kumar |
+| Responsive and Design of Dashboard | Dashboard | 5h 0m | Review | Mayank Kumar |
+| Design of Storyboard | Storyboard | 5h 0m | Review | Mayank Kumar |
+| Amount of Data Loaded | Performance Testing | 1h 40m | Review | Mahan Singh |
+| Utilization of Filters | Performance Testing | 1h 40m | Review | Mahan Singh |
+| No. of Visualizations / Graphs | Performance Testing | 1h 40m | Review | Mahan Singh |
+| Publishing | Web Integration | 2h 30m | Review | Mahan Singh |
+| Dashboard and Story Embed with UI with Flask | Web Integration | 2h 30m | Review | Mayank Dhingra |
+| Record Explanation Video for End to End Solution | Project Demonstration & Documentation | 2h 30m | Review | Mayank Dhingra |
+| Project Documentation | Project Demonstration & Documentation | 2h 30m | Review | Mayank Dhingra |
