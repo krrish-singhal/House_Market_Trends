@@ -35,18 +35,18 @@ The project follows a structured workflow to deliver actionable insights:
 
 ## Project Modules
 
-| Module                                           | Epic                                       | Estimated Time | Status | Assigned to    |
-| ------------------------------------------------ | ------------------------------------------ | -------------- | ------ | -------------- |
-| Collect the Dataset                              | Data Collection & Extraction from Database | 2h 30m         | Review | Krrish Singhal |
-| Loading the Dataset                              | Data Collection & Extraction from Database | 2h 30m         | Review | Krrish Singhal |
-| Data Cleaning                                    | Data Preparation                           | 5h 0m          | Review | Krrish Singhal |
-| No. of Unique Visualizations                     | Data Visualization                         | 5h 0m          | Review | Mayank Kumar   |
-| Responsive and Design of Dashboard               | Dashboard                                  | 5h 0m          | Review | Mayank Kumar   |
-| Design of Storyboard                             | Storyboard                                 | 5h 0m          | Review | Mayank Kumar   |
-| Amount of Data Loaded                            | Performance Testing                        | 1h 40m         | Review | Mahan Singh    |
-| Utilization of Filters                           | Performance Testing                        | 1h 40m         | Review | Mahan Singh    |
-| No. of Visualizations / Graphs                   | Performance Testing                        | 1h 40m         | Review | Mahan Singh    |
-| Publishing                                       | Web Integration                            | 2h 30m         | Review | Mahan Singh    |
-| Dashboard and Story Embed with UI with Flask     | Web Integration                            | 2h 30m         | Review | Mayank Dhingra |
-| Record Explanation Video for End to End Solution | Project Demonstration & Documentation      | 2h 30m         | Review | Mayank Dhingra |
-| Project Documentation                            | Project Demonstration & Documentation      | 2h 30m         | Review | Mayank Dhingra |
+| Module | Epic | Estimated Time | Status | Assigned to |
+|---|---|---|---|---|
+| Collect the Dataset | Data Collection & Extraction from Database | 2h 30m | Review | Krrish Singhal |
+| Loading the Dataset | Data Collection & Extraction from Database | 2h 30m | Review | Krrish Singhal |
+| Data Cleaning | Data Preparation | 5h 0m | Review | Krrish Singhal |
+| No. of Unique Visualizations | Data Visualization | 5h 0m | Review | Mayank Kumar |
+| Responsive and Design of Dashboard | Dashboard | 5h 0m | Review | Mayank Kumar |
+| Design of Storyboard | Storyboard | 5h 0m | Review | Mayank Kumar |
+| Amount of Data Loaded | Performance Testing | 1h 40m | Review | Mahan Singh |
+| Utilization of Filters | Performance Testing | 1h 40m | Review | Mahan Singh |
+| No. of Visualizations / Graphs | Performance Testing | 1h 40m | Review | Mahan Singh |
+| Publishing | Web Integration | 2h 30m | Review | Mahan Singh |
+| Dashboard and Story Embed with UI with Flask | Web Integration | 2h 30m | Review | Mayank Dhingra |
+| Record Explanation Video for End to End Solution | Project Demonstration & Documentation | 2h 30m | Review | Mayank Dhingra |
+| Project Documentation | Project Demonstration & Documentation | 2h 30m | Review | Mayank Dhingra |
